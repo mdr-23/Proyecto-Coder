@@ -1,0 +1,210 @@
+.contenedor-fixture {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.container-titulos-fixture {
+  padding-top: 50px;
+}
+
+.titulo-fixture {
+  font-family: "Kanit", sans-serif;
+  font-size: 38px !important;
+  color: #0436ff;
+  text-align: center;
+  border-bottom: #0436ff solid 2px;
+}
+
+.subtitulo-fixture {
+  font-family: "Kanit", sans-serif;
+  font-size: 28px !important;
+  text-align: center;
+  color: black;
+}
+
+.divisiones-fixture {
+  font-family: "Kanit", sans-serif;
+  background-color: #0436ff;
+  color: white;
+  font-size: 20px !important;
+}
+
+.info-fixture {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  background: aliceblue;
+}
+
+.color-numero {
+  background-color: #0436ff !important;
+  color: aliceblue;
+  padding: 5px 10px !important;
+}
+
+th {
+  width: 5%;
+}
+
+td {
+  width: 5%;
+}
+
+/* MOBILE STYLES FIXTURE */
+@media only screen and (max-width: 500px) {
+  .titulo-pagina {
+    font-size: 40px;
+  }
+
+  .seccion-1-contacto {
+    display: none;
+  }
+
+  .tabla {
+    width: 50px !important;
+  }
+
+  .contenedor-fixture {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-titulos-fixture {
+    text-align: center;
+  }
+
+  .titulo-fixture {
+    font-family: "Kanit", sans-serif;
+    font-size: 18px !important;
+    color: #0436ff;
+    text-align: center;
+    border-bottom: #0436ff solid 1px;
+  }
+
+  .subtitulo-fixture {
+    font-family: "Kanit", sans-serif;
+    font-size: 15px !important;
+    text-align: center;
+    color: black;
+  }
+
+  .divisiones-fixture {
+    font-family: "Kanit", sans-serif;
+    background-color: #0436ff;
+    color: white;
+    font-size: 8px;
+  }
+
+  .info-fixture {
+    font-family: "Inter", sans-serif;
+    font-size: 8px;
+    background: aliceblue;
+  }
+
+  .color-numero {
+    background-color: #0436ff !important;
+    color: aliceblue;
+    padding: 5px 5px !important;
+  }
+
+  td {
+    width: 50% !important;
+  }
+}
+
+/* TABLET STYLES FIXTURE */
+@media only screen and (min-width: 501px) and (max-width: 1200px) {
+  .titulo-pagina {
+    font-size: 40px;
+  }
+
+  .contenedor-fixture {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo-fixture {
+    font-family: "Kanit", sans-serif;
+    font-size: 26px !important;
+    color: #0436ff;
+    text-align: center;
+    border-bottom: #0436ff solid 2px;
+  }
+
+  .subtitulo-fixture {
+    font-family: "Kanit", sans-serif;
+    font-size: 18px !important;
+    text-align: center;
+    color: black;
+  }
+
+  .divisiones-fixture {
+    font-family: "Kanit", sans-serif;
+    background-color: #0436ff;
+    color: white;
+    font-size: 10px;
+  }
+
+  .info-fixture {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    background: aliceblue;
+  }
+
+  .color-numero {
+    background-color: #0436ff !important;
+    color: aliceblue;
+    padding: 5px 10px !important;
+  }
+
+  td {
+    padding: 5px 10px !important;
+  }
+}
+
+/* DESKSTOP STYLES FIXTURE */
+@media only screen and (min-width: 960px) {
+  .contenedor-fixture {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0px 100px;
+  }
+
+  .titulo-fixture {
+    color: #0436ff;
+    text-align: center;
+    border-bottom: #0436ff solid 2px;
+  }
+
+  .subtitulo-fixture {
+    text-align: center;
+    color: black;
+  }
+
+  .divisiones-fixture {
+    font-family: "Kanit", sans-serif;
+    background-color: #0436ff;
+    color: white;
+    font-size: 14px;
+  }
+
+  .info-fixture {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    background: aliceblue;
+  }
+
+  .color-numero {
+    background-color: #0436ff !important;
+    color: aliceblue;
+    padding: 5px 10px !important;
+  }
+
+  td {
+    padding: 5px 10px !important;
+  }
+}

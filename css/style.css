@@ -1,0 +1,890 @@
+@charset "UTF-8";
+/* Header */
+.header {
+  background-color: #0436ff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+.header .redes {
+  text-decoration: none;
+  margin-left: 5px;
+  position: relative;
+}
+.header .redes:hover {
+  filter: brightness(60%);
+}
+
+/* Fin Header */
+/* Footer */
+.footer {
+  background-color: #ffff4d;
+  font-family: "Inter" !important;
+  text-align: center !important;
+  font-size: 12px !important;
+  padding: 1px;
+}
+
+/* Fin footer */
+/* Navbar */
+.section-1 {
+  background-color: #ffff4d;
+  padding: 5px;
+  text-align: center;
+}
+.section-1 .escudo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.section-1 .escudo {
+  transition: 1s all;
+  display: inline-block;
+  filter: drop-shadow(0 0 0.5rem black);
+  animation-name: escudoAparece;
+  animation-duration: 3s;
+}
+.section-1 .escudo:hover {
+  transform: scale(1.1, 1.1);
+}
+
+@keyframes escudoAparece {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.titulo-aparece {
+  font-family: "Kanit", cursive;
+  color: #0436ff;
+  margin: 0 15px;
+  font-size: 35px;
+  animation-duration: 6s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.navbar {
+  background-color: transparent !important;
+  margin-top: 10px;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.link-navbar {
+  font-family: "Inter" !important;
+  color: #0436ff !important;
+  font-size: 15px;
+  border-right: #ffff4d solid 2px;
+}
+
+.link-navbar:hover {
+  background-color: #ffff4d !important;
+}
+
+.contenedor-fixture {
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.container-titulos-fixture {
+  padding-top: 50px;
+}
+
+.titulo-fixture {
+  font-family: "Kanit", sans-serif;
+  font-size: 38px !important;
+  color: #0436ff;
+  text-align: center;
+  border-bottom: #0436ff solid 2px;
+}
+
+.subtitulo-fixture {
+  font-family: "Kanit", sans-serif;
+  font-size: 28px !important;
+  text-align: center;
+  color: black;
+}
+
+.divisiones-fixture {
+  font-family: "Kanit", sans-serif;
+  background-color: #0436ff;
+  color: white;
+  font-size: 20px !important;
+}
+
+.info-fixture {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  background: aliceblue;
+}
+
+.color-numero {
+  background-color: #0436ff !important;
+  color: aliceblue;
+  padding: 5px 10px !important;
+}
+
+th {
+  width: 5%;
+}
+
+td {
+  width: 5%;
+}
+
+/* MOBILE STYLES FIXTURE */
+@media only screen and (max-width: 500px) {
+  .titulo-pagina {
+    font-size: 40px;
+  }
+
+  .seccion-1-contacto {
+    display: none;
+  }
+
+  .tabla {
+    width: 50px !important;
+  }
+
+  .contenedor-fixture {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-titulos-fixture {
+    text-align: center;
+  }
+
+  .titulo-fixture {
+    font-family: "Kanit", sans-serif;
+    font-size: 18px !important;
+    color: #0436ff;
+    text-align: center;
+    border-bottom: #0436ff solid 1px;
+  }
+
+  .subtitulo-fixture {
+    font-family: "Kanit", sans-serif;
+    font-size: 15px !important;
+    text-align: center;
+    color: black;
+  }
+
+  .divisiones-fixture {
+    font-family: "Kanit", sans-serif;
+    background-color: #0436ff;
+    color: white;
+    font-size: 8px;
+  }
+
+  .info-fixture {
+    font-family: "Inter", sans-serif;
+    font-size: 8px;
+    background: aliceblue;
+  }
+
+  .color-numero {
+    background-color: #0436ff !important;
+    color: aliceblue;
+    padding: 5px 5px !important;
+  }
+
+  td {
+    width: 50% !important;
+  }
+}
+/* TABLET STYLES FIXTURE */
+@media only screen and (min-width: 501px) and (max-width: 1200px) {
+  .titulo-pagina {
+    font-size: 40px;
+  }
+
+  .contenedor-fixture {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo-fixture {
+    font-family: "Kanit", sans-serif;
+    font-size: 26px !important;
+    color: #0436ff;
+    text-align: center;
+    border-bottom: #0436ff solid 2px;
+  }
+
+  .subtitulo-fixture {
+    font-family: "Kanit", sans-serif;
+    font-size: 18px !important;
+    text-align: center;
+    color: black;
+  }
+
+  .divisiones-fixture {
+    font-family: "Kanit", sans-serif;
+    background-color: #0436ff;
+    color: white;
+    font-size: 10px;
+  }
+
+  .info-fixture {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    background: aliceblue;
+  }
+
+  .color-numero {
+    background-color: #0436ff !important;
+    color: aliceblue;
+    padding: 5px 10px !important;
+  }
+
+  td {
+    padding: 5px 10px !important;
+  }
+}
+/* DESKSTOP STYLES FIXTURE */
+@media only screen and (min-width: 960px) {
+  .contenedor-fixture {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0px 100px;
+  }
+
+  .titulo-fixture {
+    color: #0436ff;
+    text-align: center;
+    border-bottom: #0436ff solid 2px;
+  }
+
+  .subtitulo-fixture {
+    text-align: center;
+    color: black;
+  }
+
+  .divisiones-fixture {
+    font-family: "Kanit", sans-serif;
+    background-color: #0436ff;
+    color: white;
+    font-size: 14px;
+  }
+
+  .info-fixture {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    background: aliceblue;
+  }
+
+  .color-numero {
+    background-color: #0436ff !important;
+    color: aliceblue;
+    padding: 5px 10px !important;
+  }
+
+  td {
+    padding: 5px 10px !important;
+  }
+}
+.encabezado-pagina-azul {
+  background-image: url(../img/cancha-fondo-amarillo.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+  font-size: 65px;
+  font-family: "Kanit", sans-serif;
+  color: aliceblue;
+  font-size: 65px;
+  font-family: "Kanit", sans-serif;
+  color: #0436ff;
+}
+
+.encabezado-pagina-blanco {
+  background-image: url(../img/temporada.jpg);
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+  font-size: 65px;
+  font-family: "Kanit", sans-serif;
+  color: aliceblue;
+  font-size: 65px;
+  font-family: "Kanit", sans-serif;
+  color: aliceblue;
+}
+
+.titulo-noticia {
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.subtitulo-noticia {
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  color: black;
+  text-align: justify;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: #0436ff;
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+
+.buttons-con .action-link-wrap a {
+  background: #0436ff;
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.buttons-con .action-link-wrap a:hover {
+  background: #ffff4d;
+  color: #0436ff;
+}
+
+#Polygon-1,
+#Polygon-2,
+#Polygon-3,
+#Polygon-4,
+#Polygon-4,
+#Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+
+#Polygon-2 {
+  animation-delay: 0.2s;
+}
+
+#Polygon-3 {
+  animation-delay: 0.4s;
+}
+
+#Polygon-4 {
+  animation-delay: 0.6s;
+}
+
+#Polygon-5 {
+  animation-delay: 0.8s;
+}
+
+@keyframes float {
+  100% {
+    transform: translateY(20px);
+  }
+}
+@media (max-width: 450px) {
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -190px;
+  }
+
+  .message-box {
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+    text-align: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.title {
+  font-family: "kanit", sans-serif;
+  color: black;
+  font-size: 50px;
+  margin: 50px 0 25px 0;
+}
+
+.subtitulo {
+  font-family: "Kanit", sans-serif;
+  color: black;
+  font-size: 20px;
+}
+
+.titulo-cabecera-pagina-azul {
+  font-size: 70px;
+  font-family: "Kanit", sans-serif;
+  color: #0436ff;
+}
+
+/* Encabezado */
+.index-encabezado {
+  background-color: #0436ff;
+  padding: 40px;
+  text-align: center;
+}
+
+.title-encabezado {
+  font-family: "kanit", sans-serif;
+  color: aliceblue;
+  font-size: 50px;
+}
+
+/* MOBILE styles */
+@media only screen and (max-width: 754px) {
+  .index-encabezado {
+    background-color: #0436ff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .title-encabezado {
+    font-family: "kanit", sans-serif;
+    color: aliceblue;
+    font-size: 28px;
+  }
+}
+/* Fin MOBILE styles */
+/* Section 2 - Noticia principal */
+.link-noticia-principal {
+  font-family: "Kanit";
+  background-color: #0436ff !important;
+  text-decoration: none !important;
+  color: aliceblue !important;
+  font-size: 50px !important;
+}
+
+/* Fin Section 2 - Noticia principal */
+/* Section 4 - Fixture */
+/* DESKTOP-TABLET styles */
+.section-fixture-flex {
+  display: none;
+}
+
+.fixture-jornada-mobile {
+  display: none;
+}
+
+.fixture-resultado-mobile {
+  display: none;
+}
+
+.section-fixture-grid {
+  display: grid;
+  justify-content: center;
+  margin-top: 50px;
+  grid-template-areas: "ultima-jornada tabla" "proxima-jornada tabla";
+  column-gap: 5px;
+  grid-gap: 5px;
+  grid-template-columns: 435px 315px;
+  grid-template-rows: 265px 265px;
+}
+
+.fixture-ultima-jornada {
+  display: inline-block;
+  border: #0436ff solid 2px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px;
+  grid-area: ultima-jornada;
+  background-color: aliceblue;
+}
+
+.fixture-proxima-jornada {
+  display: inline-block;
+  border: #0436ff solid 2px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 5px;
+  grid-area: proxima-jornada;
+  background-color: aliceblue;
+}
+
+.fixture-titulo-jornada {
+  color: #0436ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 28px;
+}
+
+.fixture-titulo-clasificacion {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: aliceblue;
+  background-color: #0436ff;
+  text-indent: 40px;
+}
+
+.fixture-resultado {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  color: black;
+  margin: 0 100px;
+  padding-top: 5px;
+  word-spacing: 6px;
+}
+
+.fixture-ubicacion {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+}
+
+.fixture-horario {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: black;
+  padding: 0 10px;
+}
+
+.fixture-img {
+  margin-right: 10px;
+}
+
+.fixture-clasificacion {
+  display: block;
+  border: #0436ff solid 2px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px;
+  grid-area: tabla;
+  background-color: aliceblue;
+}
+
+.fixture-tabla-clasificacion {
+  border: aliceblue inset 0px;
+  border-collapse: collapse;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+tr {
+  border: aliceblue inset 0;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  border: aliceblue inset 0px;
+  border-collapse: collapse;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.fixture-col-pos {
+  background-color: #ffff4d;
+  color: #0436ff;
+  font-weight: bold;
+}
+
+.fixture-col-1 {
+  background-color: #fffff9;
+  color: #0436ff;
+}
+
+.fixture-col-2 {
+  background-color: #ffffe4;
+  color: #0436ff;
+}
+
+/* Fin DESKTOP-TABLET styles */
+/* MOBILE styles */
+@media only screen and (max-width: 754px) {
+  .section-fixture-grid {
+    display: none;
+  }
+
+  .fixture-resultado {
+    display: none;
+  }
+
+  .fixture-ultima-jornada {
+    display: none;
+  }
+
+  .fixture-proxima-jornada {
+    display: none;
+  }
+
+  .fixture-clasificacion {
+    display: none;
+  }
+
+  .section-fixture-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .fixture-jornada-mobile {
+    display: block;
+    border: #0436ff solid 2px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 6px;
+    background-color: aliceblue;
+    margin: 5px 28px;
+  }
+
+  .fixture-resultado-mobile {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    color: black;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+
+  .fixture-titulo-flex {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: black;
+  }
+}
+/* Fin MOBILE styles */
+/* Fin Section 4 - Fixture */
+/* Section 5 - Redes Sociales */
+.section-4-flex {
+  margin-top: 50px;
+}
+
+.background-titulo {
+  background-image: url(img/cuadrícula.png);
+  background-size: 45px;
+  width: 100%;
+  height: 45px;
+}
+
+.titulo-section4 {
+  font-family: "Kanit", sans-serif;
+  font-size: 55px;
+  color: aliceblue;
+  text-align: center;
+  background-color: #0436ff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -3px;
+}
+
+.align-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociales {
+  margin: 30px 10px;
+  filter: drop-shadow(0 0 0.2rem black);
+  transition: 0.5s all;
+}
+
+.redes-sociales:hover {
+  margin-top: 15px;
+}
+
+.vamos-inter-bottom {
+  font-family: "Permanent Marker", cursive;
+  font-size: 50px;
+  background-color: #0436ff;
+  color: #ffff4d;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: -5px;
+}
+
+/* Fin Section 5 - Redes Sociales */
+/* PÁGINA NOTICIAS */
+.noticias-container {
+  margin-top: -7px;
+  background-color: aliceblue;
+}
+
+.background-titulo {
+  background-image: url(../img/cuadrícula.png);
+  background-size: 45px;
+  width: 100%;
+  height: 45px;
+}
+
+.noticias-section-2 {
+  margin: 0 200px;
+  background-color: aliceblue !important;
+}
+
+/* FIN PÁGINA NOTICIAS */
+/* PÁGINA HISTORIA */
+.historia {
+  padding: 50px;
+}
+
+/* FIN PÁGINA HISTORIA */
+/* PÁGINA CONTACTO */
+/* DESKTOP styles */
+.mapa-mobile {
+  display: none;
+}
+
+.datos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 100px;
+  align-items: center;
+}
+
+.iconos-contacto {
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  border: #0436ff 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.iconos-contacto:last-of-type {
+  border-bottom: none;
+}
+
+.contacto-img {
+  margin-right: 10px;
+}
+
+.section-formulario {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  display: none;
+}
+
+.titulo-formulario {
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+}
+
+/* MOBILE styles */
+@media only screen and (max-width: 500px) {
+  .datos-container {
+    display: none;
+  }
+
+  .seccion-1-contacto {
+    display: none;
+  }
+
+  .mapa {
+    display: none;
+  }
+
+  .mapa-mobile {
+    display: flex;
+  }
+
+  .iconos-contacto {
+    display: none;
+  }
+
+  .datos-container-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconos-contacto-mobile {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border: #0436ff 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

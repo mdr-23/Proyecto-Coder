@@ -1,0 +1,32 @@
+%titulo {
+  font-size: 55px;
+  font-family: "Kanit", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+%subtitulo {
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+%parrafos {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  color: black;
+  text-align: justify;
+}
+
+.titulo-noticia {
+  @extend %titulo;
+}
+
+.subtitulo-noticia {
+  @extend %subtitulo;
+}
+
+p {
+  @extend %parrafos;
+}

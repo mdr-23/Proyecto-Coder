@@ -1,0 +1,19 @@
+/* Header */
+@import "../base/colores.scss";
+
+.header {
+  background-color: $azul;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  .redes {
+    text-decoration: none;
+    margin-left: 5px;
+    position: relative;
+
+    &:hover {
+      filter: brightness(60%);
+    }
+  }
+}
+/* Fin Header */

@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(img/background.jpg);
+  background-size: cover;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.title {
+  font-family: "kanit", sans-serif;
+  color: black;
+  font-size: 50px;
+  margin: 50px 0 25px 0;
+}
+
+.subtitulo {
+  font-family: "Kanit", sans-serif;
+  color: black;
+  font-size: 20px;
+}
+
+.titulo-cabecera-pagina-azul {
+  font-size: 70px;
+  font-family: "Kanit", sans-serif;
+  color: #0436ff;
+}
+
+/* Header */
+.header {
+  background-color: #0436ff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.redes {
+  text-decoration: none;
+  margin-left: 5px;
+  position: relative;
+}
+
+.redes:hover {
+  filter: brightness(60%);
+}
+/* Fin de Header */
+
+/* Section 1 - Nav */
+.section-1 {
+  background-color: #ffff4d;
+  padding: 5px;
+  text-align: center;
+}
+
+.escudo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.escudo {
+  animation-name: escudoAparece;
+  animation-duration: 3s;
+}
+
+@keyframes escudoAparece {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.titulo-aparece {
+  font-family: "Kanit", cursive;
+  color: #0436ff;
+  margin: 0 15px;
+  font-size: 35px;
+  animation-duration: 6s;
+  animation-name: aparecer;
+}
+
+.link-navbar {
+  font-family: "Kanit" !important;
+  color: #0436ff !important;
+  font-size: 20px;
+  border-right: #ffff4d solid 2px;
+}
+
+.link-navbar:hover {
+  background-color: #ffff4d !important;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.escudo {
+  transition: 1s all;
+  display: inline-block;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+.escudo:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.navbar {
+  background-color: transparent !important;
+  margin-top: 10px;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+/* Fin Section 1 - Nav */
+
+/* Encabezado */
+.index-encabezado {
+  background-color: #0436ff;
+  padding: 40px;
+  text-align: center;
+}
+
+.title-encabezado {
+  font-family: "kanit", sans-serif;
+  color: aliceblue;
+  font-size: 50px;
+}
+
+/* MOBILE styles */
+@media only screen and (max-width: 754px) {
+  .index-encabezado {
+    background-color: #0436ff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .title-encabezado {
+    font-family: "kanit", sans-serif;
+    color: aliceblue;
+    font-size: 28px;
+  }
+}
+/* Fin MOBILE styles */
+
+/* Section 2 - Noticia principal */
+.link-noticia-principal {
+  font-family: "Kanit";
+  background-color: #0436ff !important;
+  text-decoration: none !important;
+  color: aliceblue !important;
+  font-size: 50px !important;
+}
+
+/* Fin Section 2 - Noticia principal */
+
+/* Section 4 - Fixture */
+
+/* DESKTOP-TABLET styles */
+
+.section-fixture-flex {
+  display: none;
+}
+
+.fixture-jornada-mobile {
+  display: none;
+}
+
+.fixture-resultado-mobile {
+  display: none;
+}
+
+.section-fixture-grid {
+  display: grid;
+  justify-content: center;
+  margin-top: 50px;
+  grid-template-areas:
+    "ultima-jornada tabla"
+    "proxima-jornada tabla";
+  column-gap: 5px;
+  grid-gap: 5px;
+  grid-template-columns: 435px 315px;
+  grid-template-rows: 265px 265px;
+}
+
+.fixture-ultima-jornada {
+  display: inline-block;
+  border: #0436ff solid 2px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px;
+  grid-area: ultima-jornada;
+  background-color: aliceblue;
+}
+
+.fixture-proxima-jornada {
+  display: inline-block;
+  border: #0436ff solid 2px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 5px;
+  grid-area: proxima-jornada;
+  background-color: aliceblue;
+}
+
+.fixture-titulo-jornada {
+  color: #0436ff;
+  font-family: "Kanit", sans-serif;
+  font-size: 28px;
+}
+
+.fixture-titulo-clasificacion {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: aliceblue;
+  background-color: #0436ff;
+  text-indent: 40px;
+}
+
+.fixture-resultado {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  color: black;
+  margin: 0 100px;
+  padding-top: 5px;
+  word-spacing: 6px;
+}
+
+.fixture-ubicacion {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+}
+
+.fixture-horario {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: black;
+  padding: 0 10px;
+}
+
+.fixture-img {
+  margin-right: 10px;
+}
+
+.fixture-clasificacion {
+  display: block;
+  border: #0436ff solid 2px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px;
+  grid-area: tabla;
+  background-color: aliceblue;
+}
+
+.fixture-tabla-clasificacion {
+  border: aliceblue inset 0px;
+  border-collapse: collapse;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+tr {
+  border: aliceblue inset 0;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  border: aliceblue inset 0px;
+  border-collapse: collapse;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.fixture-col-pos {
+  background-color: #ffff4d;
+  color: #0436ff;
+  font-weight: bold;
+}
+
+.fixture-col-1 {
+  background-color: #fffff9;
+  color: #0436ff;
+}
+
+.fixture-col-2 {
+  background-color: #ffffe4;
+  color: #0436ff;
+}
+/* Fin DESKTOP-TABLET styles */
+
+/* MOBILE styles */
+@media only screen and (max-width: 754px) {
+  .section-fixture-grid {
+    display: none;
+  }
+
+  .fixture-resultado {
+    display: none;
+  }
+
+  .fixture-ultima-jornada {
+    display: none;
+  }
+
+  .fixture-proxima-jornada {
+    display: none;
+  }
+
+  .fixture-clasificacion {
+    display: none;
+  }
+
+  .section-fixture-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .fixture-jornada-mobile {
+    display: block;
+    border: #0436ff solid 2px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 6px;
+    background-color: aliceblue;
+    margin: 5px 28px;
+  }
+
+  .fixture-resultado-mobile {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    color: black;
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+
+  .fixture-titulo-flex {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: black;
+  }
+}
+/* Fin MOBILE styles */
+/* Fin Section 4 - Fixture */
+
+/* Section 5 - Redes Sociales */
+.section-4-flex {
+  margin-top: 50px;
+}
+
+.background-titulo {
+  background-image: url(img/cuadrícula.png);
+  background-size: 45px;
+  width: 100%;
+  height: 45px;
+}
+
+.titulo-section4 {
+  font-family: "Kanit", sans-serif;
+  font-size: 55px;
+  color: aliceblue;
+  text-align: center;
+  background-color: #0436ff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -3px;
+}
+
+.align-redes {
+  display: flex;
+  justify-content: center;
+}
+
+.redes-sociales {
+  margin: 30px 10px;
+  filter: drop-shadow(0 0 0.2rem black);
+  transition: 0.5s all;
+}
+
+.redes-sociales:hover {
+  margin-top: 15px;
+}
+
+.vamos-inter-bottom {
+  font-family: "Permanent Marker", cursive;
+  font-size: 50px;
+  background-color: #0436ff;
+  color: #ffff4d;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: -5px;
+}
+
+/* Fin Section 5 - Redes Sociales */
+
+/* Footer */
+.footer {
+  background-color: #ffff4d;
+  font-family: "Inter" !important;
+  text-align: center !important;
+  font-size: 12px !important;
+  padding: 1px;
+}
+
+/* PÁGINA NOTICIAS */
+
+.seccion-1-noticias {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(img/cancha-fondo-amarillo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px;
+  font-size: 65px;
+  font-family: "Kanit", sans-serif;
+  color: aliceblue;
+}
+
+.noticias-section-2 {
+  margin: 0 200px;
+  background-color: aliceblue !important;
+}
+
+/* FIN PÁGINA NOTICIAS */
+
+/* PÁGINA HISTORIA */
+
+.historia {
+  padding: 50px;
+}
+
+/* FIN PÁGINA HISTORIA */
+
+/* PÁGINA CONTACTO */
+
+.contacto {
+  padding: 50px;
+  text-align: center;
+}
+
+/* FIN PÁGINA CONTACTO */

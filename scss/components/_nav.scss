@@ -1,0 +1,75 @@
+@import "../base/colores.scss";
+
+/* Navbar */
+.section-1 {
+  background-color: $amarillo;
+  padding: 5px;
+  text-align: center;
+
+  .escudo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .escudo {
+    transition: 1s all;
+    display: inline-block;
+    filter: drop-shadow(0 0 0.5rem black);
+    animation-name: escudoAparece;
+    animation-duration: 3s;
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+@keyframes escudoAparece {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.titulo-aparece {
+  font-family: "Kanit", cursive;
+  color: #0436ff;
+  margin: 0 15px;
+  font-size: 35px;
+  animation-duration: 6s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  background-color: transparent !important;
+  margin-top: 10px;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.link-navbar {
+  font-family: "Inter" !important;
+  color: #0436ff !important;
+  font-size: 15px;
+  border-right: #ffff4d solid 2px;
+}
+
+.link-navbar:hover {
+  background-color: #ffff4d !important;
+}
