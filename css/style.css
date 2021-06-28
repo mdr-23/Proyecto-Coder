@@ -28,8 +28,9 @@
 /* Fin footer */
 /* Navbar */
 .section-1 {
-  background-color: #ffff4d;
-  padding: 5px;
+  background-image: url(../img/isla-azul.png);
+  background-size: cover;
+  padding: 100px 100px 50px 100px;
   text-align: center;
 }
 .section-1 .escudo-container {
@@ -43,14 +44,42 @@
   display: inline-block;
   filter: drop-shadow(0 0 0.5rem black);
   animation-name: escudoAparece;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 .section-1 .escudo:hover {
   transform: scale(1.1, 1.1);
 }
 
+.section-1-paginas {
+  background-image: none;
+  background-color: #ffff4d;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  text-align: center;
+}
+.section-1-paginas .escudo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.section-1-paginas .escudo {
+  transition: 1s all;
+  display: inline-block;
+  filter: drop-shadow(0 0 0.5rem black);
+  animation-name: escudoAparece;
+  animation-duration: 4s;
+}
+.section-1-paginas .escudo:hover {
+  transform: scale(1.1, 1.1);
+}
+
 @keyframes escudoAparece {
   0% {
+    opacity: 0;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -59,10 +88,10 @@
 }
 .titulo-aparece {
   font-family: "Kanit", cursive;
-  color: #0436ff;
+  color: #ffff4d;
   margin: 0 15px;
-  font-size: 35px;
-  animation-duration: 6s;
+  font-size: 65px;
+  animation-duration: 8s;
   animation-name: aparecer;
 }
 
@@ -86,15 +115,65 @@
 
 .link-navbar {
   font-family: "Inter" !important;
-  color: #0436ff !important;
-  font-size: 15px;
-  border-right: #ffff4d solid 2px;
+  color: aliceblue !important;
+  font-size: 18px;
+  background-color: #0436ff;
 }
 
 .link-navbar:hover {
-  background-color: #ffff4d !important;
+  background-color: transparent !important;
 }
 
+.link-navbar-paginas {
+  font-family: "Inter" !important;
+  color: aliceblue !important;
+  font-size: 18px;
+  background-color: #0436ff;
+}
+
+.link-navbar-paginas:hover {
+  background-color: transparent !important;
+  color: #0436ff !important;
+}
+
+.submenu {
+  background-image: none;
+  background-color: #0436ff;
+  padding: 5px;
+  border: none !important;
+}
+
+.title-encabezado {
+  font-family: "Permanent Marker", cursive !important;
+  color: aliceblue;
+  font-size: 60px !important;
+}
+
+/* MOBILE styles */
+@media only screen and (max-width: 754px) {
+  .section-1 {
+    background-image: url(../img/isla-azul.png);
+    background-size: cover;
+    padding: 50px 50px 20px 50px;
+    text-align: center;
+  }
+
+  .title-encabezado {
+    font-family: "Permanent Marker", sans-serif;
+    color: aliceblue;
+    font-size: 48px !important;
+  }
+
+  .titulo-aparece {
+    display: none;
+  }
+
+  .submenu {
+    background-image: none;
+    background-color: #ffff4d;
+    padding: 5px;
+  }
+}
 .contenedor-fixture {
   margin: 50px 0;
   display: flex;

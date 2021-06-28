@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdr-23/Proyecto-Coder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mdr-23/Proyecto-Coder/issues"
+  },
+  "homepage": "https://github.com/mdr-23/Proyecto-Coder#readme",
   "description": ""
 }
