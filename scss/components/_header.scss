@@ -1,6 +1,4 @@
 /* Header */
-@import "../base/colores.scss";
-
 .header {
   background-color: $azul;
   padding: 5px;
@@ -12,7 +10,7 @@
     position: relative;
 
     &:hover {
-      filter: brightness(60%);
+      filter: brightness(90%);
     }
   }
 }
