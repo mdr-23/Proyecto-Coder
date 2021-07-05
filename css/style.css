@@ -18,10 +18,12 @@
 /* Fin Header */
 /* Footer */
 .footer {
-  background-color: #ffff4d;
+  background-image: url(../img/background-azul.jpg) !important;
+  background-size: cover;
   font-family: "Inter" !important;
+  color: aliceblue !important;
   text-align: center !important;
-  font-size: 12px !important;
+  font-size: 20px !important;
   padding: 1px;
 }
 
@@ -55,7 +57,7 @@
   background-color: #ffff4d;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 20px;
+  padding-top: 20px;
   text-align: center;
 }
 .section-1-paginas .escudo-container {
@@ -177,10 +179,10 @@
   }
 }
 .contenedor-fixture {
-  margin: 50px 0;
+  margin: 50px 0px;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center !important;
 }
 
 .container-titulos-fixture {
@@ -219,14 +221,12 @@
   background-color: #0436ff !important;
   color: aliceblue;
   padding: 5px 10px !important;
-}
-
-th {
-  width: 5%;
-}
-
-td {
-  width: 5%;
+  width: 50%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
 }
 
 /* MOBILE STYLES FIXTURE */
@@ -237,10 +237,6 @@ td {
 
   .seccion-1-contacto {
     display: none;
-  }
-
-  .tabla {
-    width: 50px !important;
   }
 
   .contenedor-fixture {
@@ -255,7 +251,7 @@ td {
 
   .titulo-fixture {
     font-family: "Kanit", sans-serif;
-    font-size: 18px !important;
+    font-size: 30px !important;
     color: #0436ff;
     text-align: center;
     border-bottom: #0436ff solid 1px;
@@ -263,7 +259,7 @@ td {
 
   .subtitulo-fixture {
     font-family: "Kanit", sans-serif;
-    font-size: 15px !important;
+    font-size: 20px !important;
     text-align: center;
     color: black;
   }
@@ -272,23 +268,44 @@ td {
     font-family: "Kanit", sans-serif;
     background-color: #0436ff;
     color: white;
-    font-size: 8px;
+    font-size: 5px !important;
   }
 
   .info-fixture {
     font-family: "Inter", sans-serif;
-    font-size: 8px;
+    font-size: 5px !important;
     background: aliceblue;
   }
 
   .color-numero {
     background-color: #0436ff !important;
     color: aliceblue;
-    padding: 5px 5px !important;
+    font-size: 5px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 10px auto !important;
+  }
+
+  th {
+    font-size: 10px !important;
   }
 
   td {
     width: 50% !important;
+    align-items: center !important;
+  }
+
+  tr {
+    margin: auto auto !important;
+  }
+
+  .jornadas-fixture {
+    font-size: 5px !important;
+  }
+
+  .img-escudos {
+    height: 20px !important;
   }
 }
 /* TABLET STYLES FIXTURE */
@@ -328,49 +345,6 @@ td {
   .info-fixture {
     font-family: "Inter", sans-serif;
     font-size: 10px;
-    background: aliceblue;
-  }
-
-  .color-numero {
-    background-color: #0436ff !important;
-    color: aliceblue;
-    padding: 5px 10px !important;
-  }
-
-  td {
-    padding: 5px 10px !important;
-  }
-}
-/* DESKSTOP STYLES FIXTURE */
-@media only screen and (min-width: 960px) {
-  .contenedor-fixture {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 0px 100px;
-  }
-
-  .titulo-fixture {
-    color: #0436ff;
-    text-align: center;
-    border-bottom: #0436ff solid 2px;
-  }
-
-  .subtitulo-fixture {
-    text-align: center;
-    color: black;
-  }
-
-  .divisiones-fixture {
-    font-family: "Kanit", sans-serif;
-    background-color: #0436ff;
-    color: white;
-    font-size: 14px;
-  }
-
-  .info-fixture {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
     background: aliceblue;
   }
 
@@ -854,8 +828,7 @@ td {
   font-size: 55px;
   color: aliceblue;
   text-align: center;
-  background-color: #0436ff;
-  padding: 20px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   margin-bottom: -3px;
@@ -868,19 +841,24 @@ td {
 }
 
 .redes-sociales {
-  margin: 30px 10px;
+  margin: 20px 10px;
   filter: drop-shadow(0 0 0.2rem black);
   transition: 0.5s all;
 }
 
 .redes-sociales:hover {
-  margin-top: 15px;
+  margin-top: 5px;
+}
+
+.redes-background {
+  background-image: url(../img/background-azul.jpg) !important;
+  background-size: cover;
 }
 
 .vamos-inter-bottom {
   font-family: "Permanent Marker", cursive;
   font-size: 50px;
-  background-color: #0436ff;
+  background-color: transparent;
   color: #ffff4d;
   text-align: center;
   padding: 15px;
@@ -910,6 +888,8 @@ td {
 /* PÁGINA HISTORIA */
 .historia {
   padding: 50px;
+  margin-top: -8px;
+  background-color: aliceblue;
 }
 
 /* FIN PÁGINA HISTORIA */

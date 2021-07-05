@@ -302,10 +302,9 @@ td {
 .titulo-section4 {
   font-family: "Kanit", sans-serif;
   font-size: 55px;
-  color: aliceblue;
+  color: $blanco;
   text-align: center;
-  background-color: #0436ff;
-  padding: 20px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   margin-bottom: -3px;
@@ -318,19 +317,24 @@ td {
 }
 
 .redes-sociales {
-  margin: 30px 10px;
+  margin: 20px 10px;
   filter: drop-shadow(0 0 0.2rem black);
   transition: 0.5s all;
 }
 
 .redes-sociales:hover {
-  margin-top: 15px;
+  margin-top: 5px;
+}
+
+.redes-background {
+  background-image: url(../img/background-azul.jpg) !important;
+  background-size: cover;
 }
 
 .vamos-inter-bottom {
   font-family: "Permanent Marker", cursive;
   font-size: 50px;
-  background-color: #0436ff;
+  background-color: transparent;
   color: #ffff4d;
   text-align: center;
   padding: 15px;
@@ -364,6 +368,8 @@ td {
 
 .historia {
   padding: 50px;
+  margin-top: -8px;
+  background-color: $blanco;
 }
 
 /* FIN PÁGINA HISTORIA */
